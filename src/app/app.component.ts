@@ -20,7 +20,6 @@ import { AssetsApi } from './service/assets-api';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'test-task-school';
   value!: '';
   data$: any;
 
