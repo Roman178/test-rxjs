@@ -1,0 +1,15 @@
+<section class="movies-search">
+  <input
+    #searchInput
+    [(ngModel)]="value"
+    (ngModelChange)="handleChange()"
+    type="text"
+    class="movies-search__input"
+  />
+</section>
+
+<section class="search-results">
+  <ul>
+    <li *ngFor="let i of data$ | async">{{ i }}</li>
+  </ul>
+</section>
